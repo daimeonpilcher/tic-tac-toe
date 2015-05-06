@@ -16,26 +16,15 @@
   margin-bottom: 4px;
 }
 .exes {
-  width: 160px;
-  height: 160px;
-  border: 1px solid black;
-  background: red;
-  display: inline-block;
-  margin-bottom: 4px;
-  font-size: 120px;
-  vertical-align: center;
-  text-align: center;
-  font-family: sans-serif;
+background-image: url(tic.jpg);
+background-size: 100%;
 }
 .ohs {
-  width: 160px;
-  height: 160px;
-  border: 1px solid black;
-  background: green;
-  display: inline-block;
-  margin-bottom: 4px;
-  font-size: 120px;
-  vertical-align: center;
-  text-align: center;
-  font-family: sans-serif;
+background-image: url(tac.jpg);
+background-size: 100%;
+}
+
+.toe {
+  background-image: url(toe.jpeg);
+  background-size: 100%;
 }

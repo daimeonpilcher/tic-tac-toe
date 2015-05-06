@@ -1,11 +1,11 @@
       // wait for the DOM to finish loading
 
-      window.addEventListener("load", function ( ) {
+      $(window).load(function() {
        // all your code should go in here.
        var turns = 0;
         var checkWin = function () {
           var symbol = turns % 2 === 0 ? "exes" : "ohs";
-          var boxes = document.querySelectorAll(".box");
+          var boxes = $(".box");
           var winningCombos = [
               [0, 1, 2],
               [3, 4, 5],
@@ -29,9 +29,9 @@
         }
 
 
-       document.querySelector("#board").addEventListener("click", function(event){
+       $("#board").click(function(event){
               
-              if (event.target.classList.contains("box")) {
+              if ($(".box")) {
                var player = turns % 2 === 0 ? "X" : "O"
                 var box = event.target;
                 if (box.classList.contains("exes") || box.classList.contains("ohs")) {
@@ -46,7 +46,9 @@
                   box.classList.add("ohs");
                 }
                 if (checkWin()) {
+                  box.classList.add("toe")
                   alert("You win! " + player);
+
                 }
                 turns +=1;
               }
